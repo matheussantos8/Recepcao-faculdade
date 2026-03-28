@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home">
+        <ion-icon name="arrow-back-outline" style="font-size: 25px;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Sobre</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content
+[scrollEvents]="true"
+(ionScrollStart)="handleScrollStart()"
+(ionScroll)="handleScroll($any($event))"
+(ionScrollEnd)="handleScrollEnd()"
+class="ion-padding"
+>
+  <div class="container">
+    <h1 class="ion-text-center"><strong>Apresentação:</strong></h1>
+  
+    <p>Este aplicativo foi desenvolvido como parte da disciplina de <strong>Desenvolvimento de Aplicativos Mobile.</strong>
+      O objetivo principal é aplicar os conceitos de interfaces híbridas utilizando o framework <strong>Ionic.</strong>
+      A estrutura do projeto baseia-se no <strong>Angular</strong>, 
+      aproveitando do <strong>TypeScript</strong>, 
+      tipado e de fácil manutenção. Durante o desenvolvimento, foram explorados componentes nativos, 
+      navegação entre telas (Router), estilização customizada com SCSS e manipulação de eventos de interface</p>
+  </div>
+
+</ion-content>
+
+

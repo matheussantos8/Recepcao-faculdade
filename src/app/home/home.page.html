@@ -1,20 +1,36 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Cartão de Identificação
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+    <ion-card>
+
+      <ion-avatar>
+       <img alt="person" src="assets/avatar-icon.jpeg" />
+      </ion-avatar>
+
+        <ion-card-header class="ion-text-center">
+          <ion-card-subtitle>Matheus Santos da Silva</ion-card-subtitle>
+          <ion-card-title>Análise e Desenvolvimento de Sistemas</ion-card-title>
+        </ion-card-header>
+
+      <ion-card-content>
+        <h2><strong>Turma:</strong> ADS0301M</h2>
+        <h2><strong>Unidade:</strong> Bonsucesso</h2>
+        <h2><strong>Turno:</strong> Manhã</h2>
+      </ion-card-content>
+
+      <ion-button routerLink="/about" color="primary" class="ion-text-center" id="botao">
+        Sobre
+        <ion-icon name="arrow-forward-outline" id="arrow-right"></ion-icon>
+      </ion-button>
+
+   </ion-card>
 </ion-content>
+
+

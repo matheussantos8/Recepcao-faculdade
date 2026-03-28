@@ -1,27 +1,77 @@
-#container {
-  text-align: center;
+ion-content {
+  --display: flex;
+  --flex-direction: column;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  ion-title {
+    font-size: 24px;  
+    font-weight: bold; 
+    text-align: center;
+    justify-content: center;
+  }
+  
+  ion-card {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    text-align: center; 
+    margin: auto;
+    margin-top: 20px;
+    
+      ion-card-content {
+      text-align: left; 
+      margin-top: 15px;
+      }
+    
+      ion-card-title {
+        font-weight: bold;
+        color: var(--ion-color-primary); 
+      }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+      ion-avatar {
+        width: 130px !important;  
+        height: 130px !important;
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+        margin: 30px auto 10px auto; 
+        display: block; 
 
-  color: #8c8c8c;
+        border: 4px solid white;
+        box-shadow: 0 6px 10px rgba(0,0,0,0.2); 
 
-  margin: 0;
-}
+        img {
+          object-fit: cover; 
+          width: 100%;
+          height: 100%;
+        }
+      }
+      
+        #botao {
+          --border-radius: 10px;
+          margin: 10px auto;
+          padding: 10px;
+          margin-bottom: 10px;
+          width: 90%;
+          font-weight: 500 !important; 
+          font-size: 1.1rem;
+          letter-spacing: 0; 
+            
+            
+          }
+          
+        
+        
+        #botao:hover {
+          transform: scale(1.02);
+          box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2);
+        }
+      
+        #botao:active {
+          transform: scale(0.98);
+          --background: #1a428a;
+        }
 
-#container a {
-  text-decoration: none;
-}
+        #arrow-right {
+          padding-left: 10px;
+        }
+        
+    }
+  }
